@@ -77,3 +77,10 @@ services:
       - mongo
     ports:
       - 127.0.0.1:1337:1337
+
+  proxy-service:
+    container_name: proxy-service
+    restart: always
+    build: ./proxy-service
+    ports:
+      - "3001:3001"
