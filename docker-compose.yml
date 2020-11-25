@@ -1,6 +1,17 @@
 version: "3"
 services:
 
+  front-end-nuxt:
+    container_name: front-end-nuxt
+    build: ./front-end-nuxt
+    volumes:
+      - ./front-end-nuxt:/usr/src/app/
+      - dependencies-front-end-nuxt:/usr/src/app/node_modules
+    working_dir: /usr/src/app
+    ports:
+      - 3000:3000
+    command: ["npm", "run", "dev"]
+
   first-service:
     container_name: first-service
     build: ./first-service
@@ -13,7 +24,7 @@ services:
     environment:
       NODE_ENV: development
     ports:
-      - 3000:3000
+      - 3001:3001
     command: npm run dev
 
   second-service:
@@ -28,7 +39,7 @@ services:
     environment:
       NODE_ENV: development
     ports:
-      - 3001:3001
+      - 3002:3002
     command: npm run dev
 
   db:
@@ -102,10 +113,7 @@ services:
 volumes:
   dependencies-first-service:
   dependencies-second-service:
+  dependencies-front-end-nuxt:
   postgresql_data:
   persist_volume:
   konga_mongo_data:
-
-networks:
-  kong-net:
-    external: true
