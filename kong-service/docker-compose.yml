@@ -8,6 +8,8 @@ services:
       - POSTGRES_USER=kong
       - POSTGRES_DB=kong
       - POSTGRES_PASSWORD=kong
+    ports:
+      - "5433:5432"
     volumes:
       - ./pg_data:/var/lib/postgresql/data
     restart: always
@@ -65,6 +67,8 @@ services:
     container_name: konga_mongo
     volumes:
       - ./mongo_data:/data/db
+    ports:
+      - 27018:27017
 
   konga:
     image: pantsel/konga
