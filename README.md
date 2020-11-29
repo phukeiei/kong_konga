@@ -4,7 +4,7 @@ For kong and konga service
 - install PG4Admin
 - migration data
 -------------------------------------------
-Gobal Account Admin
+Global Account Admin
 -------------------------------------------
 - username : jackadmin
 - password : jacadmin
