@@ -1,8 +1,10 @@
 # kong_konga
-1. เข้าไปใน nuxt-service/app แล้ว yarn install
-2. จากนั้น docker-compose up ที่ nuxt-service (ถอยออกมาจาก /app) (รอปะมาณ2-3นาที)
-3. เข้าไปใน kong-service จากนั้นใช้ bash ./start.sh (รอจนเสร็จ)
-*****Username ใน Konga
-username : jackadmin
-password : jackadmin
-role : superadmin
+For kong and konga service
+- install studio 3 T
+- install PG4Admin
+- migration data
+-------------------------------------------
+Gobal Account Admin
+-------------------------------------------
+- username : jackadmin
+- password : jacadmin
