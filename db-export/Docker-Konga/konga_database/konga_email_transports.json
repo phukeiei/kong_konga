@@ -1,0 +1,98 @@
+{ 
+    "_id" : ObjectId("5fc30796c44c9200060814d7"), 
+    "name" : "smtp", 
+    "description" : "Send emails using the SMTP protocol", 
+    "schema" : [
+        {
+            "name" : "host", 
+            "description" : "The SMTP host", 
+            "type" : "text", 
+            "required" : true
+        }, 
+        {
+            "name" : "port", 
+            "description" : "The SMTP port", 
+            "type" : "text", 
+            "required" : true
+        }, 
+        {
+            "name" : "username", 
+            "model" : "auth.user", 
+            "description" : "The SMTP user username", 
+            "type" : "text", 
+            "required" : true
+        }, 
+        {
+            "name" : "password", 
+            "model" : "auth.pass", 
+            "description" : "The SMTP user password", 
+            "type" : "text", 
+            "required" : true
+        }, 
+        {
+            "name" : "secure", 
+            "model" : "secure", 
+            "description" : "Use secure connection", 
+            "type" : "boolean"
+        }
+    ], 
+    "settings" : {
+        "host" : "", 
+        "port" : "", 
+        "auth" : {
+            "user" : "", 
+            "pass" : ""
+        }, 
+        "secure" : false
+    }, 
+    "active" : true, 
+    "createdAt" : ISODate("2020-11-29T02:29:42.140+0000"), 
+    "updatedAt" : ISODate("2020-12-01T15:37:02.304+0000"), 
+    "createdUserId" : null, 
+    "updatedUserId" : null
+}
+{ 
+    "_id" : ObjectId("5fc30796c44c9200060814d8"), 
+    "name" : "sendmail", 
+    "description" : "Pipe messages to the sendmail command", 
+    "settings" : {
+        "sendmail" : true
+    }, 
+    "active" : false, 
+    "createdAt" : ISODate("2020-11-29T02:29:42.147+0000"), 
+    "updatedAt" : ISODate("2020-12-01T15:37:02.321+0000"), 
+    "createdUserId" : null, 
+    "updatedUserId" : null
+}
+{ 
+    "_id" : ObjectId("5fc30796c44c9200060814d9"), 
+    "name" : "mailgun", 
+    "description" : "Send emails through Mailgun’s Web API", 
+    "schema" : [
+        {
+            "name" : "api_key", 
+            "model" : "auth.api_key", 
+            "description" : "The API key that you got from www.mailgun.com/cp", 
+            "type" : "text", 
+            "required" : true
+        }, 
+        {
+            "name" : "domain", 
+            "model" : "auth.domain", 
+            "description" : "One of your domain names listed at your https://mailgun.com/app/domains", 
+            "type" : "text", 
+            "required" : true
+        }
+    ], 
+    "settings" : {
+        "auth" : {
+            "api_key" : "", 
+            "domain" : ""
+        }
+    }, 
+    "active" : false, 
+    "createdAt" : ISODate("2020-11-29T02:29:42.148+0000"), 
+    "updatedAt" : ISODate("2020-12-01T15:37:02.327+0000"), 
+    "createdUserId" : null, 
+    "updatedUserId" : null
+}

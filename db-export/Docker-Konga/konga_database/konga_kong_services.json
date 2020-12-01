@@ -1,0 +1,9 @@
+{ 
+    "_id" : ObjectId("5fc37427c774790006fe4a22"), 
+    "kong_node_id" : "5fc37396c774790006fe4a21", 
+    "service_id" : "56de3637-43d3-4aac-ac6c-8d89feb3e724", 
+    "createdAt" : ISODate("2020-11-29T10:12:55.844+0000"), 
+    "updatedAt" : ISODate("2020-11-29T10:12:55.844+0000"), 
+    "createdUserId" : null, 
+    "updatedUserId" : null
+}

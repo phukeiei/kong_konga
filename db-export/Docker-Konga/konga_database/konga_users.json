@@ -1,0 +1,14 @@
+{ 
+    "_id" : ObjectId("5fc315b44d4e4e0006ace45e"), 
+    "username" : "jackadmin", 
+    "email" : "jack@admin.co.th", 
+    "activationToken" : "27e68266-577d-44dc-aacd-ee290466049a", 
+    "admin" : true, 
+    "active" : true, 
+    "node_id" : "", 
+    "createdAt" : ISODate("2020-11-29T03:29:56.731+0000"), 
+    "updatedAt" : ISODate("2020-11-29T10:10:31.355+0000"), 
+    "createdUserId" : null, 
+    "updatedUserId" : ObjectId("5fc315b44d4e4e0006ace45e"), 
+    "node" : ObjectId("5fc37396c774790006fe4a21")
+}

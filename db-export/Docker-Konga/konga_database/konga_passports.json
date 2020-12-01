@@ -1,0 +1,8 @@
+{ 
+    "_id" : ObjectId("5fc315b54d4e4e0006ace45f"), 
+    "protocol" : "local", 
+    "password" : "$2a$10$Qv2MjUOQpGCIdT24r/d0lOYcYIGc1YwXCxAj7vGXwOeXmMYHWUvEm", 
+    "user" : ObjectId("5fc315b44d4e4e0006ace45e"), 
+    "createdAt" : ISODate("2020-11-29T03:29:57.046+0000"), 
+    "updatedAt" : ISODate("2020-11-29T03:29:57.046+0000")
+}
